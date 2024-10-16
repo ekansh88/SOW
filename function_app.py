@@ -10,7 +10,7 @@ def http_trigger_richText(req: func.HttpRequest) -> func.HttpResponse:
     name = req.params.get('name')
     if not name:
         try:
-            req_body = req.get_json()
+            req_body = req.get_json() 
         except ValueError:
             pass
         else:
